@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Blaka&family=Montserrat:wght@100;200;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    rgb(22, 49, 79),
+    rgb(84, 138, 138)
+  );
+  color: #fff;
+}
+
+header {
+  position: relative;
+  height: 5rem;
+  color: #fff;
+}
+
+nav {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #ddd;
+}
+.logo {
+  font-family: "Blaka", cursive;
+  font-size: 2rem;
+  color: rgb(26, 26, 59);
+}
+label {
+  color: #ddd;
+}
+
+.main {
+  margin: 20px auto;
+  height: 100vh;
+}
+
+.main h1 {
+  text-align: center;
+  margin: 30px;
+  color: #ddd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 1rem;
+}
+
+input,
+select {
+  height: 40px;
+  width: 600px;
+  border: 2px solid tomato;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+textarea {
+  border: 2px solid tomato;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.button,
+.btn {
+  margin: 1rem;
+  width: 200px;
+  padding: 1.5rem;
+  background: rgb(0, 69, 69);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn {
+  margin-left: 0;
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 15px 0;
+}
+h4 {
+  margin-bottom: 20px;
+}
+
+.main-home img {
+  border-radius: 15px;
+}
+.main-home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px;
+  line-height: 1.5rem;
+}
+.aside {
+  width: 50%;
+}
+
+footer {
+  height: 6rem;
+  background: rgb(6, 51, 51);
+  margin-bottom: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  width: 30px;
+  margin: 1rem;
+}
+/* laptops */
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    background: linear-gradient(to bottom right, brown, teal);
+    padding: 0 1rem;
+  }
+
+  nav > button {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+
+  header ul {
+    display: flex;
+  }
+  header ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 2rem;
+  }
+
+  header ul li a {
+    transition: 0.2s;
+  }
+
+  header ul li a:hover {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 2px;
+  }
+}
+
+/* tablets and phones */
+
+@media only screen and (max-width: 940px) {
+  .main-home img {
+    width: 350px;
+    height: auto;
+  }
+  .main-home {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    background: linear-gradient(to bottom right, brown, teal);
+  }
+
+  nav > button {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+  }
+
+  .no-display {
+    display: none;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    background: linear-gradient(to bottom right, brown, teal);
+    height: 5rem;
+    width: 100%;
+    padding: 3rem 1rem;
+  }
+
+  .menu {
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+
+  .md-style {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 80px;
+    z-index: 1;
+    box-shadow: -5px 10px 20px #888888;
+    text-align: center;
+  }
+
+  .md-style li {
+    padding: 2rem 0;
+    text-transform: uppercase;
+    transition: 0.2s;
+  }
+  .md-style li a {
+    padding: 1rem 6rem 1rem 1rem;
+  }
+
+  .md-style li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  input,
+  textarea,
+  select {
+    width: 398px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .main-home {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .aside {
+    width: 95%;
+  }
+  .main-home img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  input,
+  textarea,
+  select {
+    width: 290px;
+  }
+  .md-style li {
+    padding: 1rem 0;
+    font-size: 0.7rem;
+  }
+  .md-style li a {
+    padding-right: 6rem;
+  }
+}
